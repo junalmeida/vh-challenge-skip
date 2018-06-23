@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "checkJs": false
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
