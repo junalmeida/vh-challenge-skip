@@ -27,7 +27,7 @@ describe("ReviewsStore", () => {
 
 		var actualJSON = JSON.stringify(store.items);
 		var expectedJSON = JSON.stringify(expectedArray);
-		expect(expectedJSON).toEqual(actualJSON);
+		expect(actualJSON).toEqual(expectedJSON);
 	});
 
 	it("should remove an item", () => {
@@ -42,7 +42,7 @@ describe("ReviewsStore", () => {
 		const expectedArray = [];
 		var actualJSON = JSON.stringify(store.items);
 		var expectedJSON = JSON.stringify(expectedArray);
-		expect(expectedJSON).toEqual(actualJSON);
+		expect(actualJSON).toEqual(expectedJSON);
 	});
 
 });
