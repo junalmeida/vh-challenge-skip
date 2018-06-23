@@ -6,7 +6,7 @@ Coding Challenge for Skip The Dishes
 * **Name:** Marcos Almeida Jr.
 * **Position:** Mobile Developer
 * **Email:** junalmeida@gmail.com
-* **App Purpose:** Store personal reviews of restaurants nearby. You can choose any restaurant nearby and them choose a category and write your review. 
+* **App Purpose:** Store personal reviews of restaurants nearby. You can choose any restaurant nearby and then choose a category and write your review. 
 * **Ideas for next versions:**
     1. Publish all reviews to an Api that can store and retrieve user's reviews.
     2. Build a ranking system so users can vote the best reviews
@@ -26,13 +26,18 @@ See it running
 Architecture
 ------------
 
-1. React Native App
-2. MobX
-3. Google Places API
+1. React Native App   
+    React Native is one of the choices to build an app for multiple platforms with the same code base. Other good options are Xamarin C# (also native) and Ionic/Cordova (hybrid).
+2. MobX  
+    MobX was chosen because it is easy to manipulate data using observable notations. 
+3. Google Places API  
+    Api to find places to make reviews.  
+    Google Api Key: (to be stored and protected by a CI/CD tool)  
+    > AIzaSyDXSPQqjeKtObRqkAy9GV3dH2AL4lemors
+
 4. Jest for test runner
 
-Google Api Key: (to be stored and protected by a CI/CD tool)  
-> AIzaSyDXSPQqjeKtObRqkAy9GV3dH2AL4lemors
+
 
 Requirements
 ------------

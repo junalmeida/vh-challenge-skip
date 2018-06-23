@@ -1,6 +1,7 @@
 // @flow
 import * as React from "react";
-import { Item, Input, Icon, Form, Toast } from "native-base";
+import { Item, Input, Icon, Form } from "native-base";
+import { Toast } from "react-native";
 import { observer, inject } from "mobx-react/native";
 import { Keyboard } from "react-native";
 
