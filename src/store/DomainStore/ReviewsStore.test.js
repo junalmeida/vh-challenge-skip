@@ -29,4 +29,20 @@ describe("ReviewsStore", () => {
 		var expectedJSON = JSON.stringify(expectedArray);
 		expect(expectedJSON).toEqual(actualJSON);
 	});
+
+	it("should remove an item", () => {
+		const data = require("./data");
+
+		const store = new ReviewsStore();
+		store.items = data;
+
+		//call it
+		store.remove(store.items[0]); //data have one single item
+
+		const expectedArray = [];
+		var actualJSON = JSON.stringify(store.items);
+		var expectedJSON = JSON.stringify(expectedArray);
+		expect(expectedJSON).toEqual(actualJSON);
+	});
+
 });
