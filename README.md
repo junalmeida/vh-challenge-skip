@@ -18,7 +18,7 @@ See it running
 --------------
 
 <p align="center">
-    ![See it running](./docs/vh-video.gif)
+    <img src="./docs/vh-video.gif">
 </p>
 
 * For this Hackaton any email and 4 chars password will do.
