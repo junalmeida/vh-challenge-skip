@@ -1,8 +1,9 @@
-import { ReviewsStore, Item } from "./ReviewsStore";
-import data from "./data";
+import ReviewsStore, { Item } from "../DomainStore/ReviewsStore";
 
 describe("ReviewsStore", () => {
 	it("should save new item", () => {
+		const data = require("./data");
+
 		const store = new ReviewsStore();
 		store.items = data;
 
@@ -14,11 +15,12 @@ describe("ReviewsStore", () => {
 			"review": "Spicy jalapeno bacon ipsum dolor amet beef ribs burgdoggen beef, hamburger pancetta cow swine doner pork belly t-bone shank. "
 		};
 
-		var expectedArray = data.splice(0).push(expectedData); //splice to clone
+		var expectedArray = data.slice(0);
+		expectedArray.push(expectedData); //slice to clone
 
-		const itemToSave = new Item(data.place);
-		itemToSave.category = data.category;
-		itemToSave.review = data.review;
+		const itemToSave = new Item(expectedData.place);
+		itemToSave.category = expectedData.category;
+		itemToSave.review = expectedData.review;
 
 		//call it
 		store.save(itemToSave);

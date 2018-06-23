@@ -36,6 +36,7 @@ Architecture
     > AIzaSyDXSPQqjeKtObRqkAy9GV3dH2AL4lemors
 
 4. Jest for test runner
+    I created a unit test for the main storage controller.
 
 
 
