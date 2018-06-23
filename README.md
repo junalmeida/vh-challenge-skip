@@ -11,12 +11,15 @@ Coding Challenge for Skip The Dishes
     1. Publish all reviews to an Api that can store and retrieve user's reviews.
     2. Build a ranking system so users can vote the best reviews
     3. Ask the user to review a nearby restaurant that has not been reviewed.
+    4. Check if the place chosen is a real restaurant.
 
 
 See it running
 --------------
 
-![See it running](./docs/vh-video.gif)
+<p align="center">
+    ![See it running](./docs/vh-video.gif)
+</p>
 
 * For this Hackaton any email and 4 chars password will do.
  
@@ -41,6 +44,19 @@ Requirements
 5. Android SDK (to compile for Android)
 6. Mac and XCode (to compile for iOS)
 
+IDE
+---
+If you like vscode, I recommend the following extensions:
+
+* ESLint
+* Java Extension Pack
+* npm
+* React Native Tools
+* yarn
+
+Open the root folder. Open the command bar and type React Native: Run Android on Device (or iOS Simulator)
+
+
 Running
 -------
 
@@ -48,8 +64,12 @@ Running
 1. get the sources
 2. cd to the root path
 3. yarn install
-4. open an android emulator or connect a real device with adb
-4. yarn android (to run on android device or simulator)
+4. at android emulator, set gps to: 
+> Longitude: -46.6898  
+> Latitude: -23.5840
+
+5. open an android emulator or connect a real device with adb
+6. yarn android (to run on android device or simulator)
 
 
 Coding Challenge Task
